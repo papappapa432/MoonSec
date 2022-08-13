@@ -1,0 +1,705 @@
+print("Hello, Thanks For Using Maximum Gui. Enjoy!")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Maximum Gui", "Ocean")
+
+local Main = Window:NewTab("Scripts")
+
+local MainSection = Main:NewSection("Bedwars")
+MainSection:NewButton("Vape V4", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+MainSection:NewButton("JN HH GAMING 2.0", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PhanMaximum/JN-HH-GAMING-2.0/main/BEDWARS"))()
+end)
+    
+local MainSection = Main:NewSection("Admin Commands")
+MainSection:NewButton("Infinite Yield", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+local MainSection = Main:NewSection("Arsenal, ...")
+MainSection:NewButton("Owl Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+MainSection:NewButton("Dark Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+MainSection:NewButton("Get Key Here: darkhub-v4.maxt.church", "", function()
+    print("Paste It In Your Browser To Get The Dark Hub Key")
+end)
+
+local MainSection = Main:NewSection("Combat Warrior")
+MainSection:NewButton("Project Hook", "", function()
+    loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
+
+local MainSection = Main:NewSection("Blox Fruit, ...")
+MainSection:NewButton("Hoho Hub", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+MainSection:NewButton("Ultra Script (MADE BY PUNK#6969)", "", function()
+    loadstring(Game:HttpGet("https://pastebin.com/raw/g6XFWiNg"))()
+end)
+
+MainSection:NewButton("Works On Blox Fruits, King Legacy, ...", "", function()
+    print("Ultra Script Works On: Blox Fruits, King Legacy, Build A Boat For Treasure, A 0ne Piece Game, Ro-Ghoul And Grand Piece Online")
+end)
+
+local MainSection = Main:NewSection("Counter")
+MainSection:NewButton("FPS Counter", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/PhanMaximum/FPS-Counter/main/EZ'))()
+end)
+MainSection:NewButton("Ping Counter", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/PhanMaximum/Ping-Counter/main/W'))()
+end)
+
+local MainSection = Main:NewSection("Build A Boat")
+MainSection:NewButton("Ruby Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/BABFT/main/Ruby%20Hub", true))()
+end)
+
+local MainSection = Main:NewSection("Dev Tool")
+MainSection:NewButton("SimpleSpy", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Z7q6jtt4"))()
+end)
+
+MainSection:NewButton("Filter Shark", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ZcKiBTC9"))()
+end)
+
+local MainSection = Main:NewSection("Roblox Innovation Awards Voting Hub")
+MainSection:NewButton("Get All Hats And Badges", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/WfHnTun7"))()
+end)
+
+local MainSection = Main:NewSection("BrookHaven RP")
+MainSection:NewButton("Ice Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+local MainSection = Main:NewSection("Guacathon")
+MainSection:NewButton("Get Sword Pack And Walkin' Poncho", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/y3YMxwZq"))()
+end)
+
+local MainSection = Main:NewSection("JailBreak")
+MainSection:NewButton("Vynixius", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
+end)
+
+local MainSection = Main:NewSection("Most Games")
+MainSection:NewButton("Harsh Tech", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/HarshTech7.4-Full-Version/main/HarshTech7.4.txt"))()
+end)
+
+MainSection:NewButton("Reeqy Hub", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/3LCC036u"))()
+end)
+
+--Player
+local Player = Window:NewTab("Player")
+
+local PlayerSection = Player:NewSection("Walkspeed And Jumpheight")
+PlayerSection:NewSlider("Walkspeed", "", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpHeight", "", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset WS/JP", "", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 
+end)
+
+local PlayerSection = Player:NewSection("FE Scripts")
+PlayerSection:NewButton("FE Ragdoll Death", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/d86ta8dg", true))()
+end)
+
+PlayerSection:NewButton("FE Zombie", "", function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/someunknowndude/18f1d979ad9a25ad69064be75f55f735/raw/dc36f1e9ad906a7434bd77bcd0ce8218fb5f4d88/zombie.lua"))()
+end)
+
+PlayerSection:NewButton("Required Hats: pastebin.com/5EqwrJxt", "", function()
+    print("Paste It In Your Browser To See What Hats Are Needed For FE Zombie")
+end)
+
+PlayerSection:NewButton("FE Chat Remover", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/vDSsv26h"))()
+end)
+
+PlayerSection:NewButton("FE Minecraft Ghast Fling", "", function()
+    loadstring(game:HttpGet('https://pastefy.ga/zFn0z6VV/raw'))()
+end)
+
+PlayerSection:NewButton("Required Hats: pastebin.com/raw/VJU8brdw", "", function()
+    print("Paste It In Your Browser To See What Hats Are Needed For FE Minecraft Ghast Fling")
+end)
+
+PlayerSection:NewButton("FE Da Feets", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ZK3pn6nQ"))()
+end)
+
+PlayerSection:NewButton("FE 40+ R6 Poses", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/RmD3qNp7", true))()
+end)
+
+PlayerSection:NewButton("FE Penis", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/rYdqKKm7"))()
+end)
+
+PlayerSection:NewButton("Required: Pal Hair", "", function()
+    print("Pal Hair Is Needed For FE Penis")
+end)
+
+PlayerSection:NewButton("FE Sonic", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+end)
+
+PlayerSection:NewButton("Ctrl: Super Speed | E: Tilt ", "", function()
+    print("Controls For FE Sonic: Ctrl: Super Speed | E: Tilt")
+end)
+
+PlayerSection:NewButton("FE Animation", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+end)
+
+PlayerSection:NewButton("FE Stand (Fling)", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zWbedbTj"))()
+end)
+
+PlayerSection:NewButton("Required Hats: pastebin.com/JjAftgQx", "", function()
+    print("Paste It In Your Browser To See What Hats Are Needed For FE Stand")
+end)
+
+local PlayerSection = Player:NewSection("Others")
+PlayerSection:NewButton("Rejoin Same Server", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Kbiv53tW"))()
+end)
+
+PlayerSection:NewKeybind("Open/Close Gui", "", Enum.KeyCode.LeftAlt, function()
+	print("You Can Set A Custom Key To Open/Close Gui In | Player Tab --> Others Section |")
+    Library:ToggleUI()
+end)
+
+--My Own Scripts
+local MyOwnScripts = Window:NewTab("My Scripts")
+
+local MyOwnScriptsSection = MyOwnScripts:NewSection("Clicker Madness")
+MyOwnScriptsSection:NewToggle("AutoClicker", "", function(state)
+    if state then
+        _G.autoTap = true;
+        
+        spawn(function()
+            while _G.autoTap == true do 
+            local args = {[1] = 1}
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+        wait()
+    end
+end)
+    else
+        _G.autoTap = false;
+        
+        spawn(function()
+            while _G.autoTap == true do 
+            local args = {[1] = 1}
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+        wait()
+    end
+end)
+    end
+end)
+
+MyOwnScriptsSection:NewToggle("AutoRebirth 1K Clicks", "", function(state)
+    if state then
+        _G.autoRebirth = true;
+        
+        spawn(function()
+            while _G.autoRebirth == true do 
+                local args = {[1] = 1000}
+                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(unpack(args))
+                wait()
+            end
+        end)
+    else
+        _G.autoRebirth = false;
+        
+        spawn(function()
+            while _G.autoRebirth == true do 
+                local args = {[1] = 1000}
+                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(unpack(args))
+                wait()
+            end
+        end)
+    end
+end)
+
+MyOwnScriptsSection:NewToggle("AutoBug Basic Eggs", "", function(state)
+    if state then
+        _G.bugEgg = true;
+
+        spawn(function()
+            while wait() do
+                if not _G.bugEgg then break end;
+                    local args = {[1] = "basic"}
+                    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+                wait()
+            end
+        end)
+    else
+        _G.bugEgg = false;
+
+        spawn(function()
+            while wait() do
+                if not _G.bugEgg then break end;
+                    local args = {[1] = "basic"}
+                    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+                wait()
+            end
+        end)
+    end
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Desert", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Desert.Teleport.CFrame)
+end)    
+
+MyOwnScriptsSection:NewButton("Teleport To Winter", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Winter.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Lava", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Lava.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Toxic", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Toxic.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Ocean", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Ocean.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Candy", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Candy.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Space", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Space.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Forest", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Forest.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To City", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.City.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Blocks", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Blocks.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Future", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Future.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Infinity", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Infinity.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Moon", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Moon.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Fire", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Fire.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Dominus", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Dominus.Teleport.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Storm", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").Worlds.Storm.Teleport.CFrame)
+end)
+
+local MyOwnScriptsSection = MyOwnScripts:NewSection("Prison Life")
+MyOwnScriptsSection:NewButton("M9", "", function()
+    local args = {[1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP}
+    workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+end)
+
+MyOwnScriptsSection:NewButton("Remington 870", "", function()
+    local args = {[1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP}
+    workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+end)
+
+MyOwnScriptsSection:NewButton("AK-47", "", function()
+    local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+    local Event = game:GetService("Workspace").Remote.ItemHandler
+    Event:InvokeServer(A_1)
+end)
+
+MyOwnScriptsSection:NewButton("Crude Knife", "", function()
+    local A_1 = game:GetService("Workspace")["Prison_ITEMS"].single["Crude Knife"].ITEMPICKUP
+    local Event = game:GetService("Workspace").Remote.ItemHandler
+    Event:InvokeServer(A_1)
+end)
+
+MyOwnScriptsSection:NewButton("Hammer", "", function()
+    local A_1 = game:GetService("Workspace")["Prison_ITEMS"].single.Hammer.ITEMPICKUP
+    local Event = game:GetService("Workspace").Remote.ItemHandler
+    Event:InvokeServer(A_1)
+end)
+
+local MyOwnScriptsSection = MyOwnScripts:NewSection("Ninja Legend")
+MyOwnScriptsSection:NewToggle("Auto Ninjitsu", "", function(state)
+    print("Must Hold Your Katana So Auto Ninjitsu Can Work")
+    if state then
+        _G.autoNinjitsu = true;
+        
+        spawn(function()
+            while _G.autoNinjitsu == true do 
+                local args = {[1] = "swingKatana"}
+                game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(unpack(args))
+                wait()
+            end
+        end)
+    else
+        _G.autoNinjitsu = false;
+        
+        spawn(function()
+            while _G.autoNinjitsu == true do 
+                local args = {[1] = 1000}
+                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(unpack(args))
+                wait()
+            end
+        end)
+    end
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Sell", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").sellTeleportPart.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Enchanted Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Enchanted Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Astral Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Astral Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Mystical Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Mystical Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Space Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Space Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Tundra Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Tundra Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Eternal Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Eternal Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Sandstorm", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts.Sandstorm.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Thunderstorm", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts.Thunderstorm.CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Ancient Inferno Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Ancient Inferno Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Midnight Shadow Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Midnight Shadow Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Mythical Souls Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Mythical Souls Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Winter Wonder Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Winter Wonder Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Golden Master Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Golden Master Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Dragon Legend Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Dragon Legend Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Cybernetic Legends Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Cybernetic Legends Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Skystorm Ultraus Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Skystorm Ultraus Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Chaos Legends Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Chaos Legends Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Soul Fusion Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Soul Fusion Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Dark Elements Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Dark Elements Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Inner Peace Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Inner Peace Island"].CFrame)
+end)
+
+MyOwnScriptsSection:NewButton("Teleport To Blazing Vortex Island", "", function()
+    function TeleportTO(placeCFrame)
+        local plyr = game.Players.LocalPlayer;
+        if plyr.Character then
+            plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    TeleportTO(game:GetService("Workspace").islandUnlockParts["Blazing Vortex Island"].CFrame)
+end)
+
+--Credits
+local Credits = Window:NewTab("Credits")
+
+local CreditsSection = Credits:NewSection("Made By PhanMax#7083")
